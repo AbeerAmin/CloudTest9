@@ -1,8 +1,8 @@
-***Microservices Application Deployment with CI/CD***
+#Microservices Application Deployment with CI/CD***
 
 This repository contains microservices for Order, User, and Payment, designed for deployment on a Kubernetes cluster with a CI/CD pipeline.
 
-**Microservices Overview**
+##Microservices Overview
 
    Order: Handles order-related operations.
 
@@ -10,7 +10,7 @@ This repository contains microservices for Order, User, and Payment, designed fo
 
    Payment: Processes payment transactions.
 
-**Each microservice includes:**
+###Each microservice includes:
 
    app.py: Main application code.
 
@@ -23,7 +23,7 @@ This repository contains microservices for Order, User, and Payment, designed fo
    service.yaml: Kubernetes Service manifest.
 
 
-**Build and Push Docker Images**
+###Build and Push Docker Images
 
    1.1  Navigate to each microservice folder (order, user, payment).
   
@@ -36,9 +36,9 @@ This repository contains microservices for Order, User, and Payment, designed fo
              docker push CloudLabs.azurecr.io/<service-name>:latest
    
    
-**Deploy to Kubernetes**
+###Deploy to Kubernetes
    
-   2.1  Update deployment.yaml with your container image path.
+  2.1  Update deployment.yaml with your container image path.
   
   2.2  Apply the manifests to the Kubernetes cluster
 
@@ -46,7 +46,7 @@ This repository contains microservices for Order, User, and Payment, designed fo
             kubectl apply -f service.yaml
 
          
-**CI/CD with GitHub Actions**
+###CI/CD with GitHub Actions
 
 A GitHub Actions workflow is set up to automate the process:
 
