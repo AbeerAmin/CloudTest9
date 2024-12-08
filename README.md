@@ -10,7 +10,7 @@ User: Manages user accounts and profiles.
 
 Payment: Processes payment transactions.
 
-Each microservice includes:
+**Each microservice includes:**
 
 app.py: Main application code.
 
@@ -23,7 +23,7 @@ deployment.yaml: Kubernetes Deployment manifest.
 service.yaml: Kubernetes Service manifest.
 
 
-1. ***Build and Push Docker Images***
+**Build and Push Docker Images***
    
   1.1  Navigate to each microservice folder (order, user, payment).
   
@@ -33,7 +33,8 @@ service.yaml: Kubernetes Service manifest.
   1.3  Push the image to Azure Container Registry:
          docker push CloudLabs.azurecr.io/<service-name>:latest
    
-2. **Deploy to Kubernetes**
+   
+**Deploy to Kubernetes**
    
   2.1  Update deployment.yaml with your container image path.
   
@@ -43,7 +44,7 @@ service.yaml: Kubernetes Service manifest.
          kubectl apply -f service.yaml
 
          
-3. **CI/CD with GitHub Actions**
+**CI/CD with GitHub Actions**
    
 A GitHub Actions workflow is set up to automate the process:
 
