@@ -24,6 +24,7 @@ This repository contains microservices for Order, User, and Payment, designed fo
 
 
 **Build and Push Docker Images**
+
    1.1  Navigate to each microservice folder (order, user, payment).
   
    1.2  Build the Docker image:
